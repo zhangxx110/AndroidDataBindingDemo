@@ -539,5 +539,6 @@ public class CustomNameCard extends LinearLayout {
         binding.setUsercard(user);
     }
 }
-**DataBindingUtil.inflate最后一个参数必须为true，否则无法绑定数据**
 ```
+**DataBindingUtil.inflate最后一个参数必须为true，否则无法绑定数据**
+
