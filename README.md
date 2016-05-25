@@ -516,3 +516,28 @@ public static ColorDrawable convertColorToDrawable(int color) {
 
 如果在非根节点的 ViewGroup 中使用 `include` 会导致 crash，已经在 StackOverflow 上提了一个问题[Android Data Binding makes app crash when using include tag in a non-root ViewGroup](http://stackoverflow.com/questions/30887906/android-data-binding-makes-app-crash-when-using-include-tag-in-a-non-root-viewgr)。
 
+## 自定义View
+```xml
+ <com.liangfeizc.databinding.view.CustomNameCard
+        android:id="@+id/nameCard"
+        app:user="@{user}"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+```
+CustomNameCard.java里增加方法setUser：
+
+```java
+public class CustomNameCard extends LinearLayout {
+    private CustomNameCardBinding binding;
+
+    private void init() {
+        binding = DataBindingUtil.inflate(LayoutInflater.from(mContext), R.layout.custom_name_card,this,
+                true);
+    }
+
+    public void setUser(ObservableUser user){
+        binding.setUsercard(user);
+    }
+}
+**DataBindingUtil.inflate最后一个参数必须为true，否则无法绑定数据**
+```
