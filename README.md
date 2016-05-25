@@ -1,12 +1,8 @@
-# 精通 Android Data Binding [![Build Status](https://travis-ci.org/LyndonChin/MasteringAndroidDataBinding.svg)](https://travis-ci.org/LyndonChin/MasteringAndroidDataBinding)
+# 精通 Android Data Binding [![Build Status](https://travis-ci.org/LyndonChin/MasteringAndroidDataBinding.svg)]
 
 [![Join the chat at https://gitter.im/LyndonChin/MasteringAndroidDataBinding](https://badges.gitter.im/LyndonChin/MasteringAndroidDataBinding.svg)](https://gitter.im/LyndonChin/MasteringAndroidDataBinding?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-* [微博 - liangfeizc-Android](http://weibo.com/u/1670598115)
-* [CSDN博客 - 码农的自留地](http://blog.csdn.net/feelang)
-* QQ 交流群：**324112728** ，或者[点击链接加入QQ群](http://jq.qq.com/?_wv=1027&k=2CokoRt)
 
----
 
 官方虽然已经给出了教程 - [Data Binding Guide](https://developer.android.com/tools/data-binding/guide.html) ，但是实践之后发现槽点实在太多，于是就有了这个教程，针对每个知识点给出更详实的例子同时也总结了遇到的一些坑，希望对你有所帮助：）
 
@@ -518,5 +514,5 @@ public static ColorDrawable convertColorToDrawable(int color) {
 
 用法可以参考代码 [IncludeActivity.java](/app/src/main/java/com/liangfeizc/databinding/sample/include/IncludeActivity.java)
 
-如果在非根节点的 ViewGroup 中使用 `include` 会导致 crash，已经在 StackOverflow 上提了一个问题[Android Data Binding makes app crash when using include tag in a non-root ViewGroup](http://stackoverflow.com/questions/30887906/android-data-binding-makes-app-crash-when-using-include-tag-in-a-non-root-viewgr)，直されたそうですけど。
+如果在非根节点的 ViewGroup 中使用 `include` 会导致 crash，已经在 StackOverflow 上提了一个问题[Android Data Binding makes app crash when using include tag in a non-root ViewGroup](http://stackoverflow.com/questions/30887906/android-data-binding-makes-app-crash-when-using-include-tag-in-a-non-root-viewgr)。
 
